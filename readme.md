@@ -4,6 +4,5 @@ This module is designed to help you understand the memory allocation, reference,
 
 ## Skills
 
-- Rigor
 - Object-oriented programming
 - Imperative programming
