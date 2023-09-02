@@ -6,12 +6,12 @@
 #    By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/02 17:03:57 by gde-jesu          #+#    #+#              #
-#    Updated: 2023/09/02 17:08:04 by gde-jesu         ###   ########.fr        #
+#    Updated: 2023/09/02 19:13:54 by gde-jesu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Library Name #
-NAME		= zombie
+NAME		= Zombie
 
 # CPP Variables #
 SRCS 		= *.cpp

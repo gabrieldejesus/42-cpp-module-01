@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/02 20:08:35 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/09/02 20:08:36 by gde-jesu         ###   ########.fr       */
+/*   Created: 2023/09/02 20:08:45 by gde-jesu          #+#    #+#             */
+/*   Updated: 2023/09/02 20:08:46 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Zombie.hpp"
 
-int main() {
-	Zombie	InstanceZombie;
-  InstanceZombie.newZombie("Foo");
-  InstanceZombie.randomChump("Foo 1");
-  
-  return (0);
+Zombie *newZombie(std::string name)
+{
+  Zombie *zombie = new Zombie();
+  zombie->_name = name;
+  return (zombie);
 }
