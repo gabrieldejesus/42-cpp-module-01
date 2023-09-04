@@ -14,7 +14,6 @@
 
 Zombie::Zombie(void)
 {
-  this->_name = "Zombie";
 	std::cout << "Constructor Zombie called!" << std::endl;
 }
 

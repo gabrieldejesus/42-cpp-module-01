@@ -16,15 +16,30 @@
 # include <iostream>
 
 class Zombie {
-  private:
-    std::string _name;
+	private:
+    	std::string _name;
   
 	public:
 		Zombie(void);
-    void announce(void)
-    {
-      std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-    }
+		
+		void announce( void )
+		{
+			std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+		}
+			
+		Zombie  *newZombie( std::string name )
+		{
+			Zombie *newZombie = new Zombie();
+			_name = name;
+			return (newZombie);
+		}
+		
+		void randomChump( std::string name )
+		{
+			Zombie  InstanceZombie;
+			_name = name;
+			announce();
+		}
 		~Zombie(void);
 };
 

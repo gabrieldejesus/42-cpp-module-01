@@ -12,10 +12,11 @@
 
 # include "Zombie.hpp"
 
-int main() {
+int main()
+{
 	Zombie	InstanceZombie;
-  InstanceZombie.newZombie("Foo");
-  InstanceZombie.randomChump("Foo 1");
+	InstanceZombie.newZombie("Foo");
+	InstanceZombie.randomChump("Foo1");
   
-  return (0);
+	return (0);
 }
