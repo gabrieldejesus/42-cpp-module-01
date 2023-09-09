@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 20:08:35 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/09/02 20:08:36 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2023/09/09 16:37:16 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 int main()
 {
-	Zombie	InstanceZombie;
-	InstanceZombie.newZombie("Foo");
-	InstanceZombie.randomChump("Foo1");
-  
+	Zombie	p1("Foo1");
+	Zombie	*p2 = p1.newZombie("Foo2");
+	
+	Zombie	p3("Foo3");
+	p3.randomChump("Foo4");
+
+	delete	p2;
 	return (0);
 }
