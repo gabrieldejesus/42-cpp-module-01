@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 20:08:26 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/09/09 16:30:35 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2023/09/14 11:58:03 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,14 @@ class	Zombie {
 		std::string _name;
   
 	public:
-		Zombie( std::string name );
-		std::string	getName();
-		Zombie*		newZombie( std::string name );
-		void		randomChump( std::string name );
-		void		announce( void );
+		Zombie(std::string name);
 		~Zombie(void);
+
+		std::string	getName();
+
+		Zombie*		newZombie(std::string name);
+		void		randomChump(std::string name);
+		void		announce(void);
 };
 
 #endif
