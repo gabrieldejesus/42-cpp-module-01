@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 20:08:18 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/09/14 11:59:48 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2023/09/16 16:32:23 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,8 @@ Zombie*	Zombie::newZombie(std::string name )
 
 void	Zombie::randomChump(std::string name)
 {
-	Zombie	*newZombie = new Zombie(name);
-	newZombie->announce();
-	delete	newZombie;
+	Zombie	newZombie(name);
+	newZombie.announce();
 }
 
 Zombie::~Zombie(void)
