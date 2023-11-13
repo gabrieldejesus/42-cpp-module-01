@@ -6,7 +6,7 @@
 #    By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/13 09:18:47 by gde-jesu          #+#    #+#              #
-#    Updated: 2023/11/13 09:20:06 by gde-jesu         ###   ########.fr        #
+#    Updated: 2023/11/13 09:35:47 by gde-jesu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@ NAME		= Zombie
 
 # CPP Variables #
 SRCS 		= *.cpp
-HDRS		= *.hpp
 
 # Compiling Variables #
 CPP 		= c++
