@@ -6,11 +6,11 @@
 #    By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/13 09:18:47 by gde-jesu          #+#    #+#              #
-#    Updated: 2023/11/13 09:35:47 by gde-jesu         ###   ########.fr        #
+#    Updated: 2023/11/22 11:47:32 by gde-jesu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Library Name #
+# Name #
 NAME		= Zombie
 
 # CPP Variables #

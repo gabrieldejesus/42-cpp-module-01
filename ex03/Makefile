@@ -6,11 +6,11 @@
 #    By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/13 10:09:12 by gde-jesu          #+#    #+#              #
-#    Updated: 2023/11/13 10:13:59 by gde-jesu         ###   ########.fr        #
+#    Updated: 2023/11/22 11:47:32 by gde-jesu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Library Name #
+# Name #
 NAME		= Violence
 
 # CPP Variables #

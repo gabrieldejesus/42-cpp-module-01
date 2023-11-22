@@ -1,35 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/13 11:15:31 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/11/22 10:34:31 by gde-jesu         ###   ########.fr       */
+/*   Created: 2023/11/22 11:54:06 by gde-jesu          #+#    #+#             */
+/*   Updated: 2023/11/22 12:22:19 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HumanB_HPP
-# define HumanB_HPP
+# include "Replace.hpp"
 
-# include <iostream>
-# include "Weapon.hpp"
+int main()
+{
 
-class	HumanB {
-	private:
-		std::string _name;
-		Weapon *_weapon;
-  
-	public:
-		HumanB(std::string name);
-		HumanB(std::string name, Weapon *weapon);
-		~HumanB(void);
-
-		const std::string& getName() const;
-		void setName(std::string name);
-		void setWeapon(Weapon &weapon);
-		void attack();
-};
-
-#endif
+	Replace	p1 = Replace("filename");
+    
+    return (0);
+}

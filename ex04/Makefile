@@ -5,20 +5,20 @@
 #                                                     +:+ +:+         +:+      #
 #    By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/09/16 16:53:53 by gde-jesu          #+#    #+#              #
-#    Updated: 2023/11/22 11:47:32 by gde-jesu         ###   ########.fr        #
+#    Created: 2023/11/22 11:46:27 by gde-jesu          #+#    #+#              #
+#    Updated: 2023/11/22 11:58:08 by gde-jesu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Name #
-NAME		= Zombie
+NAME		= Replace
 
 # CPP Variables #
 SRCS 		= *.cpp
 HDRS		= *.hpp
 
 # Compiling Variables #
-CPP 		= c++
+CPP 		= g++
 CFLAGS		= -Wall -Wextra -Werror -std=c++98
 RM 			= rm -f
 

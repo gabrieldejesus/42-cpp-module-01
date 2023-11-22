@@ -1,35 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.hpp                                         :+:      :+:    :+:   */
+/*   Replace.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/13 11:15:31 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/11/22 10:34:31 by gde-jesu         ###   ########.fr       */
+/*   Created: 2023/11/22 12:07:36 by gde-jesu          #+#    #+#             */
+/*   Updated: 2023/11/22 12:10:25 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HumanB_HPP
-# define HumanB_HPP
 
-# include <iostream>
-# include "Weapon.hpp"
+# include "Replace.hpp"
 
-class	HumanB {
-	private:
-		std::string _name;
-		Weapon *_weapon;
-  
-	public:
-		HumanB(std::string name);
-		HumanB(std::string name, Weapon *weapon);
-		~HumanB(void);
+Replace::Replace(std::string filename)
+{
+	_filename = filename;
+ 	std::cout << "Constructor " << _filename << " called!" << std::endl;
+}
 
-		const std::string& getName() const;
-		void setName(std::string name);
-		void setWeapon(Weapon &weapon);
-		void attack();
-};
+std::string Replace::getFilename()
+{
+	return (this->_filename);
+}
 
-#endif
+Replace::~Replace(void)
+{
+	std::cout << "Destructor " << getFilename() << " called!" << std::endl;
+}

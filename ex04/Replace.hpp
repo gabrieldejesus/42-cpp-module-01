@@ -1,35 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.hpp                                         :+:      :+:    :+:   */
+/*   Replace.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/13 11:15:31 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/11/22 10:34:31 by gde-jesu         ###   ########.fr       */
+/*   Created: 2023/11/22 11:56:17 by gde-jesu          #+#    #+#             */
+/*   Updated: 2023/11/22 12:11:29 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HumanB_HPP
-# define HumanB_HPP
+
+#ifndef Replace_HPP
+# define Replace_HPP
 
 # include <iostream>
-# include "Weapon.hpp"
 
-class	HumanB {
-	private:
-		std::string _name;
-		Weapon *_weapon;
-  
+class	Replace {
+    private:
+        std::string _filename;
+
 	public:
-		HumanB(std::string name);
-		HumanB(std::string name, Weapon *weapon);
-		~HumanB(void);
+		Replace(std::string filename);
+		~Replace(void);
 
-		const std::string& getName() const;
-		void setName(std::string name);
-		void setWeapon(Weapon &weapon);
-		void attack();
+		std::string getFilename();
+        // bool replace(std::string filename ,std::string s1, std::string s2)
 };
 
 #endif
