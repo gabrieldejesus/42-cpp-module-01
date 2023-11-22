@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 11:56:17 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/11/22 12:11:29 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2023/11/22 12:30:16 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,14 @@
 class	Replace {
     private:
         std::string _filename;
+        std::string _s1;
+        std::string _s2;
 
 	public:
-		Replace(std::string filename);
+		Replace(std::string filename, std::string s1, std::string s2);
 		~Replace(void);
 
 		std::string getFilename();
-        // bool replace(std::string filename ,std::string s1, std::string s2)
 };
 
 #endif

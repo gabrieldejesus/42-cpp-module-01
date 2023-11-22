@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 11:54:06 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/11/22 12:22:19 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2023/11/22 12:31:23 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int main()
 {
 
-	Replace	p1 = Replace("filename");
+	Replace	p1 = Replace("test.txt", "42", "21");
     
     return (0);
 }
