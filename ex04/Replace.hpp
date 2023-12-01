@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 11:56:17 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/11/28 10:02:56 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2023/12/01 11:34:48 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # define Replace_HPP
 
 # include <iostream>
-# include <fstream> 
+# include <fstream>
 
 class	Replace {
     private:
