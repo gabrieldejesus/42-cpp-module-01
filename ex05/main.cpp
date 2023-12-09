@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Replace.hpp                                        :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/22 11:56:17 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/12/09 13:36:43 by gde-jesu         ###   ########.fr       */
+/*   Created: 2023/12/09 13:20:06 by gde-jesu          #+#    #+#             */
+/*   Updated: 2023/12/09 18:10:25 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Replace_HPP
-# define Replace_HPP
+# include "Harl.hpp"
 
-# include <iostream>
-# include <fstream>
-# include <string>
+int main() {
+  Harl p1 = Harl();
 
-class	Replace {
-  private:
-    std::string _filename;
-    std::string _s1;
-    std::string _s2;
-
-	public:
-		Replace(std::string filename, std::string s1, std::string s2);
-		~Replace(void);
-
-		std::string getFilename();
-};
-
-#endif
+  p1.complain("debug");
+  p1.complain("info");
+  p1.complain("warning");
+  p1.complain("error");
+  p1.complain("42");
+  
+  return (0);
+}
