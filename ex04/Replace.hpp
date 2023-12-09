@@ -6,16 +6,16 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 11:56:17 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/12/01 11:34:48 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2023/12/09 13:15:26 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef Replace_HPP
 # define Replace_HPP
 
 # include <iostream>
 # include <fstream>
+# include <string>
 
 class	Replace {
     private:

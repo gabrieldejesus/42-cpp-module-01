@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 11:54:06 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/12/01 13:47:59 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2023/12/09 13:15:16 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int main()
 {
-	Replace	p1 = Replace("test.txt", "42", "21");
-    return (0);
+  Replace	p1 = Replace("test.txt", "42", "favela.dev");
+  
+  return (0);
 }

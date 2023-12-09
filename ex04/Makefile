@@ -6,7 +6,7 @@
 #    By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/22 11:46:27 by gde-jesu          #+#    #+#              #
-#    Updated: 2023/12/01 13:48:55 by gde-jesu         ###   ########.fr        #
+#    Updated: 2023/12/09 13:15:19 by gde-jesu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS 		= *.cpp
 HDRS		= *.hpp
 
 # Compiling Variables #
-CPP 		= g++
+CPP 		= c++
 CFLAGS		= -Wall -Wextra -Werror -std=c++98
 RM 			= rm -f
 
