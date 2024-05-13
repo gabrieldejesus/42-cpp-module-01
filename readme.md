@@ -9,4 +9,5 @@ This module is designed to help you understand the memory allocation, reference,
 
 ### TO-DO
 
-- [ ] Exercise 00: BraiiiiiiinnnzzzZ
+- [x] Exercise 00: BraiiiiiiinnnzzzZ
+- [x] Exercise 01: Moar brainz!
