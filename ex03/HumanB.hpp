@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 11:15:31 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/11/22 10:34:31 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2024/05/13 08:58:36 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ class	HumanB {
   
 	public:
 		HumanB(std::string name);
-		HumanB(std::string name, Weapon *weapon);
 		~HumanB(void);
 
 		const std::string& getName() const;
