@@ -12,4 +12,5 @@ This module is designed to help you understand the memory allocation, reference,
 - [x] Exercise 00: BraiiiiiiinnnzzzZ
 - [x] Exercise 01: Moar brainz!
 - [x] Exercise 02: HI THIS IS BRAIN
-- [ ] Exercise 03: Unnecessary violence
+- [x] Exercise 03: Unnecessary violence
+- [ ] Exercise 04: Sed is for losers
