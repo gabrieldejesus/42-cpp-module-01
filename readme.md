@@ -6,3 +6,7 @@ This module is designed to help you understand the memory allocation, reference,
 
 - Object-oriented programming
 - Imperative programming
+
+### TO-DO
+
+- [ ] Exercise 00: BraiiiiiiinnnzzzZ
