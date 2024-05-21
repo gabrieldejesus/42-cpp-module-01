@@ -6,7 +6,6 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 12:07:36 by gde-jesu          #+#    #+#             */
-/*   Updated: 2024/05/13 09:41:51 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,37 +17,42 @@ Replace::Replace(std::string filename, std::string s1, std::string s2)
   _s2 = s2;
   _filename = filename;
   
-  std::cout << "Constructor " << getFilename() << " called!" << std::endl;
+  std::cout << "👷 Constructor " << getFilename() << " called!" << std::endl;
 
+	// 1. Open the original file
   std::ifstream	originalFile;
-  std::ofstream	replaceFile;
-  std::size_t	posFound = 0;
-  std::size_t	pos = 0;
-  std::string	line;
+	originalFile.open(getFilename().c_str());
   
-  originalFile.open(getFilename().c_str());
-  replaceFile.open(getFilename().append(".replace").c_str());
-  
-  if (originalFile && replaceFile) {
-	while(getline(originalFile, line))
+	// 2. Open the replace file
+	std::ofstream	replaceFile;
+	replaceFile.open(getFilename().append(".replace").c_str());
+
+	// 3. Found index of every occurrence s1 and save in a variable
+	std::size_t	found = 0;
+	std::string	line = "";
+	std::string newLine = "";
+
+	while (getline(originalFile, line))
 	{
-		posFound = line.find(s1, pos);
+		newLine = line;
+		found = line.find(s1);
 		
-		while (posFound != std::string::npos)
-		{
-			if (posFound != std::string::npos)
-			{
-				line.erase(posFound, s1.length());
-				line.insert(posFound, s2);
-			}
-			posFound = line.find(s1, posFound + 1);
-		}
-		replaceFile << line << "\n";
+		// 4. Copy the line and change in the index of s1 to s2;
+		newLine.erase(found, s1.length());
+		newLine.insert(found, s2);
+
+		if (replaceFile.is_open())
+			std::cout << newLine << "\n";
+			
+		// 5. Save in the replace file the line changed
+		replaceFile << newLine << std::endl;
+		
 	}
-	std::cout << "Finished replacing all ocurrences of " << s1 << " with " << s2 << std::endl;
-  }
-  originalFile.close();
-  replaceFile.close();
+	// 6. Close replace file.
+	replaceFile.close();
+
+	// 7. CLose the original file.
+	originalFile.close();
 }
 
 std::string Replace::getFilename()
@@ -58,5 +62,5 @@ std::string Replace::getFilename()
 
 Replace::~Replace(void)
 {
-	std::cout << "Destructor " << getFilename() << " called!" << std::endl;
+	std::cout << "🚜 Destructor " << getFilename() << " called!" << std::endl;
 }
