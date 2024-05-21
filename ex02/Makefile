@@ -6,12 +6,12 @@
 #    By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/13 09:18:47 by gde-jesu          #+#    #+#              #
-#    Updated: 2023/11/22 11:47:32 by gde-jesu         ###   ########.fr        #
+#    Updated: 2024/05/21 20:12:43 by gde-jesu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Name #
-NAME		= Zombie
+NAME		= Brain
 
 # CPP Variables #
 SRCS 		= *.cpp

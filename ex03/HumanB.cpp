@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 11:15:35 by gde-jesu          #+#    #+#             */
-/*   Updated: 2024/05/13 08:54:44 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2024/05/21 20:27:14 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,10 @@ void HumanB::setName(std::string name)
 
 void HumanB::attack()
 {
-	std::cout << getName() << " attacks with their " << this->_weapon->getType() << std::endl;
+	if (this->_weapon == NULL)
+		std::cout << getName() << " has no weapon" << std::endl;
+	else
+		std::cout << getName() << " attacks with their " << this->_weapon->getType() << std::endl;
 }
 
 void HumanB::setWeapon(Weapon &weapon)

@@ -41,12 +41,9 @@ Replace::Replace(std::string filename, std::string s1, std::string s2)
 		newLine.erase(found, s1.length());
 		newLine.insert(found, s2);
 
-		if (replaceFile.is_open())
-			std::cout << newLine << "\n";
-			
 		// 5. Save in the replace file the line changed
-		replaceFile << newLine << std::endl;
-		
+		if (replaceFile.is_open())
+			replaceFile << newLine << std::endl;
 	}
 	// 6. Close replace file.
 	replaceFile.close();
