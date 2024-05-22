@@ -6,7 +6,7 @@
 #    By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/02 17:03:57 by gde-jesu          #+#    #+#              #
-#    Updated: 2023/11/22 11:47:32 by gde-jesu         ###   ########.fr        #
+#    Updated: 2024/05/22 08:08:10 by gde-jesu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ _SUCCESS	= ✨ $(GREEN)Compiled successfully$(RESET)
 _INFO		= 🚀 $(YELLOW)Info$(RESET)
 
 # Functions #
-all:		$(NAME)
+all:	$(NAME)
 
 $(NAME):	$(SRCS) $(HDRS)
 			@$(CPP) $(CFLAGS) $(SRCS) -o $(NAME)
@@ -40,8 +40,8 @@ clean::
 			@$(RM) $(NAME)
 			@printf "$(_INFO) cleaning done.\n"
 
-fclean:		clean
+fclean:	clean
 
-re: 		fclean all
+re:			fclean all
 
-.PHONY:		all clean fclean re
+.PHONY:	all clean fclean re

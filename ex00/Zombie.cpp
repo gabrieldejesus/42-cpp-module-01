@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 20:08:18 by gde-jesu          #+#    #+#             */
-/*   Updated: 2024/05/13 07:53:00 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2024/05/22 08:12:37 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Zombie::Zombie(std::string name)
 {
 	_name = name;
- 	std::cout << "Constructor " << _name << " called!" << std::endl;
+ 	std::cout << "👷 Constructor " << _name << " called!" << std::endl;
 }
 
 std::string	Zombie::getName()
@@ -30,5 +30,5 @@ void	Zombie::announce(void)
 
 Zombie::~Zombie(void)
 {
-	std::cout << "Destructor " << getName() << " called!" << std::endl;
+	std::cout << "🚜 Destructor " << getName() << " called!" << std::endl;
 }
