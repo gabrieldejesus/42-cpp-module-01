@@ -7,10 +7,11 @@ This module is designed to help you understand the memory allocation, reference,
 - Object-oriented programming
 - Imperative programming
 
-### TO-DO
+### Exercises
 
 - [x] Exercise 00: BraiiiiiiinnnzzzZ
 - [x] Exercise 01: Moar brainz!
 - [x] Exercise 02: HI THIS IS BRAIN
 - [x] Exercise 03: Unnecessary violence
-- [ ] Exercise 04: Sed is for losers
+- [x] Exercise 04: Sed is for losers
+- [x] Exercise 05: Harl 2.0
