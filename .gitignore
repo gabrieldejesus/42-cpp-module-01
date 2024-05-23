@@ -7,4 +7,5 @@ Violence
 Replace
 *.replace
 Harl
-index.js
+*.js
+*.txt

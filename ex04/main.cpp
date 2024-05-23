@@ -6,35 +6,37 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 11:54:06 by gde-jesu          #+#    #+#             */
-/*   Updated: 2024/05/22 10:00:20 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2024/05/23 08:15:39 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Replace.hpp"
 
-/* [INFO]
-* Example: make re && ./Replace index.js z test
-*/
-
-int main(int argc, char *argv[])
+int validation(int argc, char *argv[])
 {
-  if (argc != 4) {
+	if (argc != 4) {
     std::cout << "\033[0;31m[ERROR]\033[0m: Provide filename, s1, and s2 in order." << std::endl;
-    return (0);
+    return (-1);
   }
 
-  const char*   filename = argv[1];
   std::ifstream file;
   std::string   s1 = argv[2];
   std::string   s2 = argv[3];
 
-  file.open(filename);
+  file.open(argv[1]);
   if (file.fail() || s1.empty() || s2.empty()) {
     std::cout << "\033[0;31m[ERROR]\033[0m: Please provide a valid inputs." << std::endl;
-    return (0);
+    return (-1);
   }
   file.close();
+	return (0);
+}
 
-  Replace(filename, s1, s2);
+int main(int argc, char *argv[])
+{
+  if (validation(argc, argv) == -1)
+    return(-1);
+
+  Replace(argv[1], argv[2], argv[3]);
   return (0);
 }
