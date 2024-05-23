@@ -15,3 +15,4 @@ This module is designed to help you understand the memory allocation, reference,
 - [x] Exercise 03: Unnecessary violence
 - [x] Exercise 04: Sed is for losers
 - [x] Exercise 05: Harl 2.0
+- [x] Exercise 06: Harl filter
