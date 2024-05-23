@@ -5,13 +5,13 @@
 #                                                     +:+ +:+         +:+      #
 #    By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/12/09 13:20:09 by gde-jesu          #+#    #+#              #
-#    Updated: 2024/05/23 08:53:04 by gde-jesu         ###   ########.fr        #
+#    Created: 2024/05/23 08:52:55 by gde-jesu          #+#    #+#              #
+#    Updated: 2024/05/23 09:08:06 by gde-jesu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Name #
-NAME		= Harl
+NAME		= harlFilter
 
 # CPP Variables #
 SRCS 		= *.cpp

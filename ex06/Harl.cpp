@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/09 13:21:30 by gde-jesu          #+#    #+#             */
-/*   Updated: 2024/05/23 09:14:33 by gde-jesu         ###   ########.fr       */
+/*   Created: 2024/05/23 09:02:39 by gde-jesu          #+#    #+#             */
+/*   Updated: 2024/05/23 09:18:28 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void Harl::warning(void)
 
 void Harl::error(void)
 {
-  std::cout << "\033[0;31m[ ERROR ]\033[0m: This is unacceptable! I want to speak to the manager now." << std::endl;
+  std::cout << "\033[0;31m[ERROR]\033[0m: This is unacceptable! I want to speak to the manager now." << std::endl;
 }
 
 void Harl::complain(std::string level)
@@ -47,10 +47,10 @@ void Harl::complain(std::string level)
   std::string options[4];
   void (Harl::*complainPtr[4])();
   
-  options[0] = "debug";
-  options[1] = "info";
-  options[2] = "warning";
-  options[3] = "error";
+  options[0] = "DEBUG";
+  options[1] = "INFO";
+  options[2] = "WARNING";
+  options[3] = "ERROR";
 
   complainPtr[0] = &Harl::debug;
   complainPtr[1] = &Harl::info;
@@ -90,6 +90,6 @@ void Harl::complain(std::string level)
       break;
     }
     default:
-      std::cout << "\033[9m[ Probably complaining about insignificant problems ]\033[0m" << std::endl;
+      std::cout << "\033[9m[Probably complaining about insignificant problems]\033[0m" << std::endl;
   } 
 }
