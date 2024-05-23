@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 13:20:06 by gde-jesu          #+#    #+#             */
-/*   Updated: 2023/12/09 18:10:25 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2024/05/23 08:36:46 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int main() {
   p1.complain("info");
   p1.complain("warning");
   p1.complain("error");
+  
   p1.complain("42");
   
   return (0);
