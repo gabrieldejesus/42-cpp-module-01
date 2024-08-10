@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 09:20:17 by gde-jesu          #+#    #+#             */
-/*   Updated: 2024/05/22 08:50:00 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2024/08/09 22:54:49 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 int main()
 {   
-    std::string     variable = "HI THIS IS BRAIN";
-    std::string*    stringPTR = &variable;
-    std::string     &stringREF = variable;
+    std::string variable = "HI THIS IS BRAIN";
+    std::string *stringPTR = &variable;
+    std::string &stringREF = variable;
 
     // print memory
     std::cout << "+----------------------------------------------------------------+" << std::endl;
-    std::cout << "| The memory address of the string variable --> " << &variable << "   |" << std::endl;
-    std::cout << "| The memory address held by stringPTR --> " << stringPTR << "        |" << std::endl;
-    std::cout << "| The memory address held by stringREF --> " << &stringREF << "        |" << std::endl;
+    std::cout << "| The memory address of the string variable --> " << &variable << "      |" << std::endl;
+    std::cout << "| The memory address held by stringPTR --> " << stringPTR << "           |" << std::endl;
+    std::cout << "| The memory address held by stringREF --> " << &stringREF << "           |" << std::endl;
     
     std::cout << "+----------------------------------------------------------------+" << std::endl;
 
