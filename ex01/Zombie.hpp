@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 16:59:38 by gde-jesu          #+#    #+#             */
-/*   Updated: 2024/05/22 08:45:03 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2024/08/09 22:27:11 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,5 @@ class	Zombie {
 		void				setName(std::string name);
 		void				announce(void);
 };
-
-Zombie* zombieHorde( int N, std::string name );
 
 #endif
