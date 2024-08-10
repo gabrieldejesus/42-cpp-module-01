@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 11:14:05 by gde-jesu          #+#    #+#             */
-/*   Updated: 2024/05/13 09:04:56 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2024/08/09 23:06:33 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,6 @@ HumanA::HumanA(std::string name, Weapon &weapon): _weapon(weapon)
 std::string const& HumanA::getName() const
 {
 	return (this->_name);
-}
-
-void HumanA::setName(std::string name)
-{
-	this->_name = name;
 }
 
 void HumanA::attack()

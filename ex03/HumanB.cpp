@@ -6,7 +6,7 @@
 /*   By: gde-jesu <gde-jesu@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 11:15:35 by gde-jesu          #+#    #+#             */
-/*   Updated: 2024/05/22 08:57:53 by gde-jesu         ###   ########.fr       */
+/*   Updated: 2024/08/09 23:07:05 by gde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,6 @@ HumanB::HumanB(std::string name)
 std::string const& HumanB::getName() const
 {
 	return (this->_name);
-}
-
-void HumanB::setName(std::string name)
-{
-	this->_name = name;
 }
 
 void HumanB::attack()
